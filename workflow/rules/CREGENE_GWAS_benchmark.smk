@@ -69,7 +69,6 @@ rule process_bedfiles:
   output:
     outdir = "results/{comparison}/bedfiles/ALL"
   log: "results/{comparison}/logs/process_bedfiles.log"
-  conda: "../envs/r_packages.yml"
   script:
    "../../workflow/scripts/process_bedfiles.sh"
 
