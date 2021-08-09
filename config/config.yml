@@ -1,0 +1,24 @@
+# comparisons to be performed by the pipeline, copy-paste example for a template
+comparisons:
+  example:
+    pred:
+      ABC: "resources/Preds/AllPredictions.AvgHiC.ABC0.015.500.encodeFormat.txt.gz"
+      EpiMap: "resources/Preds/EpiMap_Appended.txt.gz"
+      ChromHMM: "resources/Preds/AllPredictions_ChromHMM2017_encodeFormat.tsv.gz"
+    key:
+      ABC: "resources/Preds/ABC_biosample_key.tsv"
+      EpiMap: "resources/Preds/EpiMap_biosample_key.tsv"
+      ChromHMM: "resources/Preds/ChromHMM_biosample_key.tsv"
+    programs:
+      benchmarker: "resources/Programs/Benchmarker/PoPS-selected"
+      all: "resources/Programs/ALL"
+      brain_celltype: "resources/Programs/Brain_CTS"
+      blood_celltype: "resources/Programs/Blood_CTS"
+      blood_enhancer: "resources/Programs/Enh_MasterReg"
+    trait: "resources/Traits/PASS_Alzheimers_Jansen2019.sumstats.gz"
+    bimpath: "resources/BIMS"
+    bfile_path: "resources/1000G_EUR_Phase3_plink"
+    hapmap_path: "resources/hapmap3_snps"
+    freq_path: "resources/1000G_Phase3_frq"
+    weights_path: "resources/weights"
+    baseline_cell: "resources/Baselines"
