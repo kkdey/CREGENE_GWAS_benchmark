@@ -1,0 +1,10 @@
+# config file
+configfile: "config/config.yml"
+
+# rules for CRE-gene benchmarking using disease heritability
+include: "rules/CREGENE_GWAS_benchmark"
+
+# perform all comparisons listed in config.yml
+rule all:
+  input:
+    expand("results/{comparison}/CREGENE_GWAS_benchmark.html", comparison = config["comparisons"])
